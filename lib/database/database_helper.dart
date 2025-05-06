@@ -18,7 +18,6 @@ class DatabaseHelper {
     _database = await _initDatabase();
     return _database!;
   }
-
   Future<Database> _initDatabase() async {
     // Lấy đường dẫn thư mục lưu trữ trên thiết bị Android
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
